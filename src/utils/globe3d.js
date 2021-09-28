@@ -33,7 +33,7 @@ export const renderGlobe = (refDom) => {
 
   const geometry = new SphereGeometry(RADIUS, SEGMENTS, RINGS);
   const material = new MeshBasicMaterial({
-    map: loader.load("http://localhost:8080/land_ocean_ice_cloud_2048.jpg"),
+    map: loader.load("https://sad-hamilton-c8750e.netlify.app/land_ocean_ice_cloud_2048.jpg"),
   });
   const sphere = new Mesh(geometry, material);
   scene.add(sphere);
